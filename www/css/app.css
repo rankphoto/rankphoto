@@ -1,15 +1,3 @@
-/*
- * Please see the included README.md file for license terms and conditions.
- */
-
-
-/* This file is completely optional and not required. */
-/* Note the reference that includes it in the index.html file. */
-
-
-/* Disable certain interactions on touch devices */
-/* SOURCE: https://github.com/ftlabs/fastclick/blob/master/examples/input.html */
-/* LICENSE: https://github.com/ftlabs/fastclick/blob/master/LICENSE */
 body {
     -webkit-touch-callout: none ;
     -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
@@ -46,15 +34,44 @@ body {
 .align-center {
     text-align: center ;
 }
-ul {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#menu ul {
+width:800px; /* Dimensioni della barra del menu */
+padding:0;
+margin:0 auto;
+display:block;
+list-style-type:none; /* Stile della lista */
 }
-li {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#menu li {
+    position:fixed;
+display:inline; 
+    bottom:0;
 }
-  
+.header{
+    overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+

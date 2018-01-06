@@ -5,6 +5,7 @@
   -->
 <head>
   <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/app.css" style="text/css">
 <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- added jQuery Mobile library by CDN link -->
 
@@ -33,8 +34,10 @@
 <body>
  <div data-role="page">
      
-     <div data-role="header" id="pageone">
-        <h1 class="align-left" style="color:blue;">RankPhoto</h1>
+     <div class="header" data-role="navbar" >
+       
+            <a href="#" data-icon="plus" data-align="center" data-iconpos="right">RankPhoto</a>
+         
      </div>
     
     <script src="cordova.js"></script>
@@ -48,11 +51,11 @@
 
     <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
     <!-- Place your remote debugging weinre script URL here, if it does not work above. -->
-       <div class="menu" data-role="navbar" >
-        <ul id="menu">
-            <li><a href="#" data-icon="home"></a></li>
-            <li><a href="#" data-icon="arrow-r"></a></li>
-            <li><a href="#" data-icon="search"></a></li>
+       <div class="navbar" data-role="navbar">
+       <ul>
+           <li><a href="#" data-icon="home"></a></li>
+           <li><a href="#" data-icon="arrow-r"></a></li>
+           <li><a href="#" data-icon="search"></a></li>
         </ul>
         </div>
     </div>
