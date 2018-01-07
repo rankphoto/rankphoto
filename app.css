@@ -1,0 +1,78 @@
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+html {
+    -ms-touch-action: pan-x ;
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+body {
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+}
+
+/* allow copy-paste */
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+body {
+    /* margin: 0.5rem ; */
+    background: white ;
+    color: black ;
+    height: 100%;
+    padding: 0;
+}
+
+.align-center {
+    text-align: center ;
+}
+#menu ul {
+width:800px; /* Dimensioni della barra del menu */
+padding:0;
+margin:0 auto;
+display:block;
+list-style-type:none; /* Stile della lista */
+}
+#menu li {
+    position:fixed;
+display:inline; 
+    bottom:0;
+}
+.header{
+    overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: black;
+}
