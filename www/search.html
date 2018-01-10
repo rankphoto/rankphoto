@@ -12,7 +12,7 @@
 <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- added jQuery Mobile library by CDN link -->
 
     
-    <title>RankPhoto</title>
+    <title>search</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
     <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
@@ -26,46 +26,50 @@
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
         /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
     </style>
+
+
 <script type="text/javascript">
 $(function() {
-    $("#search").click(function() {
-            $("#home1").load("search.html #search1");
+    $("#home").click(function() {
+            $("#search1").load("index.html #home1");
     });
 });
     $(function() {
     $("#user").click(function() {
-            $("#home1").load("user.html #user1");
+            $("#search1").load("user.html #user1");
     });
 });
  
 </script>
+   
 </head>
 
 
 <body>
- <div data-role="page" data-dom-cache="true">
+ <div data-role="page"  data-dom-cache="true">
      
     <div id="head"  class="header" style="border-bottom: 1px solid black">
         <font face="Copperplate Gothic Bold" size="2"  >RankPhoto<a data-icon="plus" data-theme="b"></a></font>
             
       </div>
-    <div data-role="ui-content" id="home1">
+  <div data-role="ui-content" id="search1">
      
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        
+        <p>search</p>
+      <br>
+      <p>search</p>
+      <br>
+      <p>search</p>
+      <br>
+      <p>search</p>
+      <br>
+      <p>search</p>
+      <br>
+      <p>search</p>
+      <br>
+      <p>search</p>
+      <br><p>search</p>
+      <br>
+      
      </div>
     <script src="cordova.js"></script>
 
@@ -78,16 +82,16 @@ $(function() {
 
     <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
     <!-- Place your remote debugging weinre script URL here, if it does not work above. -->
-       <div class="navbar" data-role="navbar"  >
+       <div class="navbar" data-role="navbar" 
+            >
        <ul>
-           <li><a href="#" data-prefetch="true"  data-icon="home" data-theme="b" aria-hidden="true"></a></li>
+           <li><a href="#" id="home" data-prefetch="true"  data-icon="home" data-theme="b" aria-hidden="true"></a></li>
            <li><a href="#" data-prefetch="true" data-icon="bars" data-theme="b" aria-hidden="true"></a></li>
            <li><a href="#" id="search" data-prefetch="true" data-icon="search" data-theme="b"aria-hidden="true"></a></li>
            <li><a href="#" id="user" data-prefetch="true"  data-icon="user"  data-theme="b" aria-hidden="true"></a></li>
         </ul>
         </div>
     </div>
-    
 </body>
 
 

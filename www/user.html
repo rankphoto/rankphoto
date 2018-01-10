@@ -12,7 +12,7 @@
 <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- added jQuery Mobile library by CDN link -->
 
     
-    <title>RankPhoto</title>
+    <title>user</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
     <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
@@ -28,21 +28,47 @@
     </style>
 
 
-
+<script type="text/javascript">
+$(function() {
+    $("#search").click(function() {
+            $("#user1").load("search.html #search1");
+    });
+});
+    $(function() {
+    $("#home").click(function() {
+            $("#user1").load("index.html #home1");
+    });
+});
+ 
+</script>
    
 </head>
 
 
 <body>
- <div data-role="page">
+ <div data-role="page"  data-dom-cache="true">
      
-     <div  data-role="navbar" >
+    <div id="head"  class="header" style="border-bottom: 1px solid black">
+        <font face="Copperplate Gothic Bold" size="2"  >RankPhoto<a data-icon="plus" data-theme="b"></a></font>
+            
+      </div>
+   <div data-role="ui-content" id="user1">
+     
+        <p>user</p>
+        <br>
+       <p>user</p>
+        <br>
+       <p>user</p>
+        <br>
+       <p>user</p>
+        <br>
+       <p>user</p>
+        <br>
+       <p>user</p>
+        <br>
+       <p>user</p>
        
-           
-         <a href="#"><font face="Blackadder ITC" size="10"><p align="center"><b>RankPhoto &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp +</b></p></font></a>
-         
      </div>
-    
     <script src="cordova.js"></script>
 
     <!-- for your event code, see README and file comments for details -->
@@ -54,12 +80,13 @@
 
     <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
     <!-- Place your remote debugging weinre script URL here, if it does not work above. -->
-       <div class="navbar" data-role="navbar">
+       <div class="navbar" data-role="navbar" 
+            >
        <ul>
-           <li><a href="#" class="fa fa-home" aria-hidden="true"></a></li>
-           <li><a href="#" class="fa fa-bar-chart" aria-hidden="true"></a></li>
-           <li><a href="#" class="fa fa-search" aria-hidden="true"></a></li>
-           <li><a href="#" class="fa fa-user-circle" aria-hidden="true"></a></li>
+           <li><a href="#" id="home" data-prefetch="true"  data-icon="home" data-theme="b" aria-hidden="true"></a></li>
+           <li><a href="#" data-prefetch="true" data-icon="bars" data-theme="b" aria-hidden="true"></a></li>
+           <li><a href="#" id="search" data-prefetch="true" data-icon="search" data-theme="b"aria-hidden="true"></a></li>
+           <li><a href="#" id="user" data-prefetch="true"  data-icon="user"  data-theme="b" aria-hidden="true"></a></li>
         </ul>
         </div>
     </div>
