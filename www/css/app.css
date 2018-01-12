@@ -64,15 +64,9 @@ display:inline;
     border-bottom-width: 4px;
     border-bottom-color: black;
 }
-button{
-    top: -20px;
-    left: -10px;
-    padding: 6% 500px;
-    text-align: left;
-}
-#head div{
-    line-height: 50%;    
-}
+
+
+
 font{
     color: white;
     
@@ -88,7 +82,9 @@ font{
     border-bottom-color: aqua;
 }
 
-
+.bottonplus{
+    display: inline;
+}
 .navbar a:hover {
   background: #b3b3ff;
   color: black;

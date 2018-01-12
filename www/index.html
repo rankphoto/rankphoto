@@ -1,108 +1,106 @@
 <!DOCTYPE html>
-<html>
-<!--
-  * Please see the included README.md file for license terms and conditions.
-  -->
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/app.css" style="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- added jQuery Mobile library by CDN link -->
-
-    
-    <title>RankPhoto</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
-    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
-    <style>
-        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
-        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
-        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
-        /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
-    </style>
-<script type="text/javascript">
-$(function() {
-    $("#search").click(function() {
-            $("#home1").load("search.html #search1");
-    });
-});
-    $(function() {
-    $("#user").click(function() {
-            $("#home1").load("user.html #user1");
-    });
-});
-  $(function() {
-    $("#stats").click(function() {
-            $("#home1").load("stats.html #stats1");
-    });
-});
-
-    
-    
-     $("#home1").ready(function(){
-  $("#home").click(function(){
- location.reload();
-  });
-}); 
- 
-</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-
-
 <body>
- <div data-role="page"id="home-in" data-dom-cache="true">
-     
-    <div id="head"  class="header" style="border-bottom: 1px solid black">
-       <button id="buttonplus" href="#" data-icon="plus" data-theme="b" data-icon-position="center" ><font face="Copperplate Gothic Bold" size="2" align="left"  >RankPhoto</font> </button>
-        
-      </div>
-    <div data-role="ui-content" id="home1">
-     
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        
-     </div>
-    <script src="cordova.js"></script>
+	
+	<div class="limiter">
+		<div class="container-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						RankPhoto
+					</span>
 
-    <!-- for your event code, see README and file comments for details -->
-    <script src="js/app.js"></script>
-    <!-- for your init code, see README and file comments for details -->
-    <script src="js/init-app.js"></script>
-    <!-- normalizes device and document ready events, see file for details -->
-    <script src="xdk/init-dev.js"></script>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Utente">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
 
-    <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
-    <!-- Place your remote debugging weinre script URL here, if it does not work above. -->
-       <div class="navbar" data-role="navbar"  >
-       <ul>
-           <li><a href="#" id="home" data-prefetch="true" class="fa fa-home" data-theme="b" aria-hidden="true"></a></li>
-           <li><a href="#" id="stats" data-prefetch="true" class="fa fa-line-chart"  data-theme="b" aria-hidden="true"></a></li>
-           <li><a href="#" id="search" data-prefetch="true" class="fa fa-search" data-theme="b"aria-hidden="true"></a></li>
-           <li><a href="#" id="user" data-prefetch="true"  class="fa fa-user" data-theme="b" aria-hidden="true"></a></li>
-        </ul>
-        </div>
-    </div>
-    
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"
+                                href="home.html">
+							Accedi
+						</button>
+					</div>
+										
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Ricordare
+							</label>
+						</div>
+
+						<div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Hai dimenticato
+						</span>
+						<a class="txt2" href="#">
+							Utente o Password?
+						</a>
+					</div>
+
+					<div class="text-center p-t-15">
+						<a class="txt2" href="#">
+							Crea un account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
 </body>
-
-
 </html>
