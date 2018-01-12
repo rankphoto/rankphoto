@@ -29,55 +29,45 @@
 <script type="text/javascript">
 $(function() {
     $("#search").click(function() {
-            $("#home1").load("search.html #search1");
+            $("#stats1").load("search.html #search1");
     });
 });
     $(function() {
     $("#user").click(function() {
-            $("#home1").load("user.html #user1");
+            $("#stats1").load("user.html #user1");
     });
 });
-  $(function() {
-    $("#stats").click(function() {
-            $("#home1").load("stats.html #stats1");
+$(function() {
+    $("#home").click(function() {
+            $("#stats1").load("this1");
     });
 });
-
-    
-    
-     $("#home1").ready(function(){
-  $("#home").click(function(){
- location.reload();
-  });
-}); 
- 
+  
 </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
- <div data-role="page"id="home-in" data-dom-cache="true">
+ <div data-role="page"id="stats" data-dom-cache="true">
      
     <div id="head"  class="header" style="border-bottom: 1px solid black">
        <button id="buttonplus" href="#" data-icon="plus" data-theme="b" data-icon-position="center" ><font face="Copperplate Gothic Bold" size="2" align="left"  >RankPhoto</font> </button>
         
       </div>
-    <div data-role="ui-content" id="home1">
+    <div data-role="ui-content" id="stats1">
      
-        <p>home</p>
+        <p>stats</p>
         <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
-        <br>
-        <p>home</p>
+         <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
+        <br> <p>stats</p>
         <br>
         
      </div>
@@ -95,7 +85,7 @@ $(function() {
        <div class="navbar" data-role="navbar"  >
        <ul>
            <li><a href="#" id="home" data-prefetch="true" class="fa fa-home" data-theme="b" aria-hidden="true"></a></li>
-           <li><a href="#" id="stats" data-prefetch="true" class="fa fa-line-chart"  data-theme="b" aria-hidden="true"></a></li>
+           <li><a href="#" data-prefetch="true" class="fa fa-line-chart"  data-theme="b" aria-hidden="true"></a></li>
            <li><a href="#" id="search" data-prefetch="true" class="fa fa-search" data-theme="b"aria-hidden="true"></a></li>
            <li><a href="#" id="user" data-prefetch="true"  class="fa fa-user" data-theme="b" aria-hidden="true"></a></li>
         </ul>
